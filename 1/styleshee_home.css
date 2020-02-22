@@ -1,76 +1,89 @@
-*{
-	box-sizing:  border-box;
-	margin: 0;
-	padding: 0;
-	background-color: #24252A;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
 }
 
-li,a,button{
-	font-family: san-serif;
-	font-weight: 500;
-	font-size: 17px;
-	color: #edf0f1;
-	text-decoration: none;
+li,
+a,
+button {
+    font-family: san-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #edf0f1;
+    text-decoration: none;
 }
 
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.logo{
-	width: 120px;
-	height: 60px;
-	position: absolute;
-	top: 10px;
-	left: 0px;
+.logo {
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
 }
 
-.log_in{
-	width: 45px;
-	height: 45px;
-	position: absolute;
-	top: 25px;
-	right: 30px;
-}
-.sign_up{
-	position: absolute;
-	top: 30px;
-	right: 90px;
+.log_in {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
 }
 
-.nav_bars{
-	list-style: none;
+.sign_up {
+    position: absolute;
+    top: 30px;
+    right: 90px;
 }
 
-.nav_bars li{
-	padding-left: 50px;
-	display: inline-block;
+.nav_bars {
+    list-style: none;
+}
+
+.nav_bars li {
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.nav_bar:hover {
+    color: #87CEFC;
+}
+
+button {
+    font-size: 15px;
+    padding: 9px 25px;
+    border: none;
+    background-color: dimgrey;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
 }
 
 
-.nav_bar:hover{
-	color: #87CEFC;
+/* Animation */
+
+#Animation {
+    display: block;
+    margin: 0 auto;
+    background-image: url(images/video-fallback-background.jpg);
 }
 
-button{
-	font-size: 15px;
-	padding:  9px 25px;
-	border:  none;
-	background-color: dimgrey ;
-	border-radius: 50px;
-	transition:  all 0.3s ease 0s;
-	cursor: pointer;
-}
-
-button:hover{
-	background-color: rgba(0, 136, 169, 0.8) ;
-
-}
-
-#animation{
-	width: 600px;
-	height: 400px;
+#video {
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(images/video-fallback-background.jpg);
 }
