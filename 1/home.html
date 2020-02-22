@@ -35,17 +35,10 @@
     <!--  Animation Section -->
     <div id="Animation">
 
-
-
-
-
         <video id="video" controls autoplay>
-                <source src="images/Peugeot_Instinct_Concept_Car.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-
-
+                    <source src="images/Peugeot_Instinct_Concept_Car.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
 
 
@@ -57,17 +50,26 @@
     <!--  Search Section -->
     <div id="Search_Section">
         <h3 id="S_title">Search Your Interest</h3>
-        <form class="forms" action="/action_page.php">
-            <input list="New&Used Car" name="New/Used" value="New&Used Cars">
-            <datalist id="New&Used Car">
+        <div class="form-box">
+            <form action="/action_page.php">
+                <input list="New&Used Car" class="search-field" name="New/Used">
+                <datalist id="New&Used Car">
                     <option value="New Cars">
                     <option value="Used Cars">
                     <option value="Certified Cars">
                 </datalist>
-        </form>
-
-
-
+            </form>
+            <form action="/action_page.php">
+                <input list="All makes" class="search-field" name="makes">
+                <datalist id="All makes">
+                    <option value="Audi">
+                    <option value="BMW">
+                    <option value="GMC">
+                    <option value="Mazda">
+                </datalist>
+                <input id="search_submit" type="submit">
+            </form>
+        </div>
     </div>
 
 

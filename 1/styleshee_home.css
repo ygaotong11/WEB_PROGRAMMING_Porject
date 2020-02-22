@@ -75,34 +75,58 @@ button:hover {
 /* Animation */
 
 #Animation {
-    display: block;
     margin: 0 auto;
-    background-image: url(images/video-fallback-background.jpg);
+    background-image: url(images/video_background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #video {
     width: 700px;
     height: 400px;
     display: block;
-    margin: 0 auto;
-    background-image: url(images/video-fallback-background.jpg);
+    margin-right: 30px;
+    background-image: url(images/video_background.jpg);
+    background-size: auto;
+    padding-left: 20px;
 }
+
+
+/*Search*/
 
 #Search_Section {
     border-style: solid;
     border-width: 4px;
     border-color: dimgrey;
-    background-color: purple;
     padding: 5px;
     margin-top: 20px;
     overflow: hidden;
     margin-left: 20%;
     margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.form-box {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.search-field {
+    height: 30px;
+    padding: 10px;
+    background-color: white;
 }
 
 #S_title {
-    color: white;
-    text-align: right;
+    color: #B0C4DE;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: "Monospace";
 }
 
 .forms {
