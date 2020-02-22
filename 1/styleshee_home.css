@@ -63,10 +63,14 @@ button{
 	border-radius: 50px;
 	transition:  all 0.3s ease 0s;
 	cursor: pointer;
-
 }
 
 button:hover{
 	background-color: rgba(0, 136, 169, 0.8) ;
 
+}
+
+#animation{
+	width: 600px;
+	height: 400px;
 }
