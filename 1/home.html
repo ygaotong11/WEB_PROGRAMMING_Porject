@@ -3,8 +3,10 @@
 
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="styleshee_home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="styleshee_home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,23 +27,16 @@
         </header>
         <a class="sign_up" href="#"><button>Sign up</button></a>
         <a href="#"><img class="log_in" src="images/images-removebg-preview.png" atl="log_in"></a>
-
-
-
     </div>
-
-
 
     <!--  Animation Section -->
 
     <div id="Animation">
         <img id="images_left" src="images/left.jpg" alt="Italian Trulli">
-       <video id="video" controls autoplay>
+        <video id="video" controls autoplay loop>
                 <source src="images/Peugeot_Instinct_Concept_Car.mp4" type="video/mp4">Your browser does not support the video tag.
         </video>
-        <img id="images_right" src="images/right.jpg" alt="Italian Trulli">
-
-/
+        <img id="images_right" src="images/right.jpg" alt="Italian Trulli"> 
     </div>
 
 
@@ -49,52 +44,98 @@
 
     <!--  Search Section -->
     <div id="Search_Section">
-        <h3 id="S_title">Search Your Interest</h3>
-        <div class="form-box">
-            <form action="/action_page.php">
-                <input list="New&Used Car" class="search-field" name="New/Used">
-                <datalist id="New&Used Car">
-                    <option value="New Cars">
-                    <option value="Used Cars">
-                    <option value="Certified Cars">
-                </datalist>
-            </form>
-            <form action="/action_page.php">
-                <input list="All makes" class="search-field" name="makes">
-                <datalist id="All makes">
-                    <option value="Audi">
-                    <option value="BMW">
-                    <option value="GMC">
-                    <option value="Mazda">
-                </datalist>
-                <input id="search_submit" type="submit">
-            </form>
+        <div class="center">
+            <div class="dropdown">
+                <button class="dropbtn">New & Used Cars 
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">New</a>
+                    <a href="#">Used</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Make 
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">BMW</a>
+                    <a href="#">Mercedes-Benz</a>
+                    <a href="#">Toyota</a>
+                    <a href="#">Audi</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Models
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">BMW</a>
+                    <a href="#">Mercedes-Benz</a>
+                    <a href="#">Toyota</a>
+                    <a href="#">Audi</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">No Max Price
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">$10000.00</a>
+                    <a href="#">$20000.00</a>
+                    <a href="#">$30000.00</a>
+                    <a href="#">$40000.00</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Mileage
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">10000</a>
+                    <a href="#">20000</a>
+                    <a href="#">30000</a>
+                    <a href="#">40000</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Search
+                <i class="caret-down"></i>
+              </button>
+            </div>
+
+
         </div>
     </div>
 
+    <!--  Inventory Section -->
 
     <div id="Inventory">
         <h4 id="I_title"><pre>     Trending this year</pre></h4>
         <hr><br>
         <ul id="news">
             <li><img class="im" src="images/acura.png" atl="acura"></li>
-            <li><img class="im" src="images/audi.png" alt="audi"></li>   
+            <li><img class="im" src="images/audi.png" alt="audi"></li>
             <li><img class="im" src="images/bmw.png" atl="bmw"></li>
             <li><img class="im" src="images/gmc.png" atl="gmc"></li>
-        </ul> 
-   </div>
+        </ul>
+    </div>
 
 
     <!--  Social Media Section -->
     <div id="Social_Media">
-        
-        <br>
-        <ul id="social">
-            <li><img class="ims" src="images/youtube.png" atl="youtube"></li>
-            <li><img class="ims" src="images/facebook.png" atl="youtube"></li>
-            <li><img class="ims" src="images/course.png" atl="course"></li>
-            
-        </ul>
+        <div class="center">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.google.com" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </div>
+
     </div>
 </body>
 
